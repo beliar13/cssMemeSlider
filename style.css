@@ -92,6 +92,22 @@ input:checked {
     background-size: cover;
 }
 
+.second-meme {
+    background: url('img/meme-2.png') no-repeat;
+    background-size: cover;
+
+}
+
+.third-meme {
+    background: url('img/meme-3.png');
+    background-size: cover;
+}
+
+.fourth-meme {
+    background: url('img/meme-4.png');
+    background-size: cover;
+}
+
 .one:checked ~ div div.memes-container {
     transform: translateX(0%);
     transition: 0.5s ease-in;
