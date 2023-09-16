@@ -1,3 +1,57 @@
-h1 {
-    color: aqua;
+.outer-wrapper {
+    display: flex;
+    height: 96vh;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.outer {
+    display: flex;
+    width: 25vw;
+    height: 20vh;
+    border: solid 0.2vh black;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    background-color: red;
+}
+
+.inp {
+    transform: translate3d(20vw,4vh,0);
+}
+
+.memes-container {
+    display: flex;
+    width: 25vw;
+    height: 10vh;
+    transform: translateX(-17.5%);
+
+}
+
+.one:checked ~ div{
+    transform: translateX(-17.5%);
+    transition: 0.3s ease-in;
+}
+
+.two:checked ~ div{
+    transform: translateX(-117.5%);
+    transition: 0.3s ease-in;
+}
+
+.three:checked ~ div{
+    transform: translateX(-217.5%);
+    transition: 0.3s ease-in;
+}
+
+.four:checked ~ div{
+    transform: translateX(-317.5%);
+    transition: 0.3s ease-in;
+}
+
+.meme {
+    width: 25vw;
+    height: 10vh;
+    flex-shrink: 0;
+    background-color: green;
 }
