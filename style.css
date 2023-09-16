@@ -87,25 +87,11 @@ input:checked {
     flex-shrink: 0;
 }
 
-.first-meme {
-    background: url('./img/meme-1.jpg') no-repeat;
-    background-size: cover;
-}
-
-.second-meme {
-    background: url('img/meme-2.png') no-repeat;
-    background-size: cover;
-
-}
-
-.third-meme {
-    background: url('img/meme-3.png');
-    background-size: cover;
-}
-
-.fourth-meme {
-    background: url('img/meme-4.png');
-    background-size: cover;
+img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    border-radius: 1rem;
 }
 
 .one:checked ~ div div.memes-container {
