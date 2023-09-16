@@ -1,42 +1,57 @@
+html {
+    font-size: 10px;
+}
+
 .outer-wrapper {
     display: flex;
-    height: 96vh;
-    width: 96vw;
     justify-content: center;
     align-content: center;
-    flex-wrap: wrap;
+    padding-top: 20rem;
 }
 
 .outer {
     display: flex;
-    width: 25vw;
-    height: 20vh;
+    width: 70rem;
+    height: 40rem;
     overflow: hidden;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
     background-color: red;
 }
 
+input {
+    height: 0rem;
+    appearance: none;
+    -webkit-appearance: none;
+    border-radius: 50%;
+    outline: 0.1rem solid aqua;
+    border: solid 0.4rem aqua;
+    box-sizing: border-box;
+    display: inline-flex;
+  }
+
 .inp {
-    transform: translate3d(20.5vw,40%,0);
+    transform: translate3d(63.4rem,34rem,0);
     z-index: 10;
 }
 .memes-labels {
     display: flex;
+    width: 70rem;
     flex-direction: column;
     gap: 5%;
     z-index: 1;
+    transform: translateX(-6.4rem);
 }
 
 .memes-container {
     display: flex;
-    width: 25%;
+    width: 70rem;
     height: 80%;
-    transform: translateX(-17.5%);
+    flex-shrink: 0;
 }
 
 .meme {
-    width: 25vw;
+    width: 100%;
     height: 100%;
     flex-shrink: 0;
     background-color: green;
@@ -44,9 +59,8 @@
 
 .labels-container {
     height: 15%;
-    width: 19%;
+    width: 75%;
     background-color: aqua;
-    transform: translateX(-23%);
     display: flex;
     overflow: hidden;
 }
@@ -57,23 +71,24 @@
     flex-shrink: 0;
 }
 
+
 .one:checked ~ div div.memes-container {
-    transform: translateX(-17.5%);
+    transform: translateX(0%);
     transition: 0.3s ease-in;
 }
 
 .two:checked ~ div div.memes-container {
-    transform: translateX(-117.5%);
+    transform: translateX(-100%);
     transition: 0.3s ease-in;
 }
 
 .three:checked ~ div div.memes-container {
-    transform: translateX(-217.5%);
+    transform: translateX(-200%);
     transition: 0.3s ease-in;
 }
 
 .four:checked ~ div div.memes-container {
-    transform: translateX(-317.5%);
+    transform: translateX(-300%);
     transition: 0.3s ease-in;
 }
 
