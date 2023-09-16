@@ -16,7 +16,7 @@ html {
     overflow: hidden;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
-    background-color: red;
+    background-color: #25282A;
 }
 
 input {
@@ -28,7 +28,18 @@ input {
     border: solid 0.4rem aqua;
     box-sizing: border-box;
     display: inline-flex;
+    cursor: pointer;
   }
+
+  input:hover {
+    outline: 0.1rem solid orange;
+    border: solid 0.4rem orange;
+  }
+
+input:checked {
+    outline: 0.1rem solid aqua;
+    border: solid 0.4rem orange;
+}
 
 .inp {
     transform: translate3d(63.4rem,34rem,0);
@@ -48,21 +59,26 @@ input {
     width: 70rem;
     height: 80%;
     flex-shrink: 0;
+    padding: 1rem 1rem;
+    gap: 2rem;
+    box-sizing: border-box;
 }
 
 .meme {
     width: 100%;
     height: 100%;
     flex-shrink: 0;
-    background-color: green;
+    background-color: #25282A;
+    border-radius: 1rem;
 }
 
 .labels-container {
     height: 15%;
     width: 75%;
-    background-color: aqua;
+    background-color: #25282A;
     display: flex;
     overflow: hidden;
+    padding-left: 1rem;
 }
 
 .meme-label {
@@ -71,59 +87,57 @@ input {
     flex-shrink: 0;
 }
 
+.first-meme {
+    background: url('./img/meme-1.jpg') no-repeat;
+    background-size: cover;
+}
 
 .one:checked ~ div div.memes-container {
     transform: translateX(0%);
-    transition: 0.3s ease-in;
+    transition: 0.5s ease-in;
 }
 
 .two:checked ~ div div.memes-container {
     transform: translateX(-100%);
-    transition: 0.3s ease-in;
+    transition: 0.5s ease-in;
 }
 
 .three:checked ~ div div.memes-container {
     transform: translateX(-200%);
-    transition: 0.3s ease-in;
+    transition: 0.5s ease-in;
 }
 
 .four:checked ~ div div.memes-container {
     transform: translateX(-300%);
-    transition: 0.3s ease-in;
+    transition: 0.5s ease-in;
 }
 
-#fl {
-    background-color: yellow;
+label {
+    background-color: #25282A;
 }
 
-#sl {
-    background-color: blue;
-}
-
-#thl {
-    background-color: violet;
-}
-
-#frl {
-    background-color: wheat;
+span {
+    font-size: 1.8rem;
+    color: white;
+    letter-spacing: 0.1rem;
 }
 
 .one:checked ~ div div.labels-container .meme-label {
     transform: translateX(0%);
-    transition: 0.3s ease-in;
+    transition: 0.5s ease-in;
 }
 
 .two:checked ~ div div.labels-container .meme-label {
     transform: translateX(-100%);
-    transition: 0.3s ease-in;
+    transition: 0.5s ease-in;
 }
 
 .three:checked ~ div div.labels-container .meme-label {
     transform: translateX(-200%);
-    transition: 0.3s ease-in;
+    transition: 0.5s ease-in;
 }
 
 .four:checked ~ div div.labels-container .meme-label {
     transform: translateX(-300%);
-    transition: 0.3s ease-in;
+    transition: 0.5s ease-in;
 }
