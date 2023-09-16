@@ -6,7 +6,6 @@ html {
     display: flex;
     justify-content: center;
     align-content: center;
-    padding-top: 20rem;
 }
 
 .outer {
@@ -31,7 +30,7 @@ input {
     cursor: pointer;
   }
 
-  input:hover {
+input:hover {
     outline: 0.1rem solid orange;
     border: solid 0.4rem orange;
   }
@@ -142,4 +141,64 @@ span {
 .four:checked ~ div div.labels-container .meme-label {
     transform: translateX(-300%);
     transition: 0.5s ease-in;
+}
+
+@media screen and (max-width: 1023px) {
+
+    .outer-wrapper {
+        padding-top: 0;
+    }
+
+    .outer {
+        width: 50rem;
+        height: 40rem;
+    }
+
+    .memes-labels {
+        width: 50rem;
+        gap: 9%;
+    }
+
+    .memes-container {
+        width: 50rem;
+        height: 66%;
+    }
+
+    .labels-container {
+        height: 25%;
+    }
+    
+    .inp {
+        transform: translate3d(21.8rem,27.5rem,0);
+    }
+}
+
+@media screen and (max-width: 520px) {
+
+    .outer-wrapper {
+        padding-top: 0;
+    }
+
+    .outer {
+        width: 48rem;
+        height: 40rem;
+    }
+
+    .memes-labels {
+        width: 48rem;
+        gap: 9%;
+    }
+
+    .memes-container {
+        width: 48rem;
+        height: 66%;
+    }
+
+    .labels-container {
+        height: 25%;
+    }
+    
+    .inp {
+        transform: translate3d(21.8rem,27.5rem,0);
+    }
 }
